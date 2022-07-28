@@ -1,0 +1,24 @@
+datasources:1faa9600703fda17b8b58da35392bfa9f141cff1
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:49fe5e58795ecd2f72afd4d135af2a689df1cf20
+--suite Suites.Checkbox
+--suite Suites.Day4Workshop
+--suite Suites.Day4Workshop2
+--suite Suites.Day5ValidateHTML
+--suite Suites.Day5Workshop1
+--suite Suites.Day6MultiSelectChkbox
+--suite Suites.Day6PopupHandle
+--suite Suites.Day6PopupHandle2
+--suite Suites.Day6ReadXML
+--suite Suites.Day6runTestusingTag
+--suite Suites.Day6runTestusingTag1
+--suite Suites.Day6runTestusingTag2
+--suite Suites.Day6runTestusingTag3
+--suite Suites.Googletest
+--suite Suites.RadioButton
+--suite Suites.ReusableCheck
+--suite Suites.SelectDoprDown
+--suite Suites.WindowAndTab
+--suite Suites.readDateNTime
+--suite Suites.techEd

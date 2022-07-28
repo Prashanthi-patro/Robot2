@@ -1,257 +1,1719 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220726 09:25:53.290" rpa="false" schemaversion="3">
-<suite id="s1" name="Day6PopupHandle2" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6PopupHandle2.robot">
-<test id="s1-t1" name="TC_001" line="16">
-<kw name="LaunchMyWebsite" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<robot generator="Rebot 5.0.1 (Python 3.10.4 on win32)" generated="20220728 11:40:06.260" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Checkbox" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Checkbox.robot">
+<test id="s1-s1-t1" name="TC_Chkbox_001" line="21">
+<kw name="Open Browser">
 <arg>${appurl}</arg>
 <arg>${browsername}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220726 09:25:53.740" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
-<status status="PASS" starttime="20220726 09:25:53.739" endtime="20220726 09:25:59.688"/>
+<msg timestamp="20220728 11:39:50.790" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:50.790" endtime="20220728 11:39:50.790"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220726 09:25:59.688" endtime="20220726 09:25:59.814"/>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:50.795" endtime="20220728 11:39:50.796"/>
 </kw>
-<status status="PASS" starttime="20220726 09:25:53.739" endtime="20220726 09:25:59.815"/>
+<kw name="Checkbox Should not Be Selected">
+<arg>(//input[@type='checkbox'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.798" endtime="20220728 11:39:50.799"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>JavaScriptAlertbtn</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220726 09:25:59.816" level="INFO">Clicking button 'JavaScriptAlertbtn'.</msg>
-<msg timestamp="20220726 09:25:59.940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220726 09:25:59.941" level="FAIL">Button with locator 'JavaScriptAlertbtn' not found.</msg>
-<status status="FAIL" starttime="20220726 09:25:59.815" endtime="20220726 09:25:59.949"/>
+<kw name="Checkbox Should Be Selected">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.801" endtime="20220728 11:39:50.802"/>
+</kw>
+<kw name="Select Checkbox">
+<arg>(//input[@type='checkbox'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.804" endtime="20220728 11:39:50.804"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:50.804" endtime="20220728 11:39:50.804"/>
+</kw>
+<kw name="Checkbox Should Be Selected">
+<arg>(//input[@type='checkbox'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.806" endtime="20220728 11:39:50.807"/>
+</kw>
+<kw name="Unselect Checkbox">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.809" endtime="20220728 11:39:50.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:50.810" endtime="20220728 11:39:50.810"/>
+</kw>
+<kw name="Checkbox Should not Be Selected">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.812" endtime="20220728 11:39:50.812"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:50.812" endtime="20220728 11:39:50.812"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:50.814" endtime="20220728 11:39:50.814"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:50.787" endtime="20220728 11:39:50.815">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:50.772" endtime="20220728 11:39:50.832"/>
+</suite>
+<suite id="s1-s2" name="Day6runTestusingTag1" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6runTestusingTag1.robot">
+<test id="s1-s2-t1" name="Test Case 1" line="7">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.196" endtime="20220728 11:39:59.197"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.193" endtime="20220728 11:39:59.197"/>
+</test>
+<test id="s1-s2-t2" name="Test Case 2" line="12">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.221" endtime="20220728 11:39:59.222"/>
+</kw>
+<tag>Grey</tag>
+<status status="PASS" starttime="20220728 11:39:59.199" endtime="20220728 11:39:59.223"/>
+</test>
+<test id="s1-s2-t3" name="Test Case 3" line="17">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.225" endtime="20220728 11:39:59.226"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.224" endtime="20220728 11:39:59.226"/>
+</test>
+<test id="s1-s2-t4" name="Test Case 4" line="22">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 4</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.228" endtime="20220728 11:39:59.229"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.227" endtime="20220728 11:39:59.229"/>
+</test>
+<test id="s1-s2-t5" name="Test Case 5" line="27">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 5</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.231" endtime="20220728 11:39:59.232"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.230" endtime="20220728 11:39:59.233"/>
+</test>
+<test id="s1-s2-t6" name="Test Case 6" line="32">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 6</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.235" endtime="20220728 11:39:59.236"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:59.234" endtime="20220728 11:39:59.237"/>
+</test>
+<test id="s1-s2-t7" name="Test Case 7" line="37">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 7</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.239" endtime="20220728 11:39:59.240"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.238" endtime="20220728 11:39:59.241"/>
+</test>
+<test id="s1-s2-t8" name="Test Case 8" line="42">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 8</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.243" endtime="20220728 11:39:59.244"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:59.242" endtime="20220728 11:39:59.244"/>
+</test>
+<test id="s1-s2-t9" name="Test Case 9" line="47">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 9</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.246" endtime="20220728 11:39:59.247"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.245" endtime="20220728 11:39:59.247"/>
+</test>
+<test id="s1-s2-t10" name="Test Case 10" line="52">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 10</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.249" endtime="20220728 11:39:59.250"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.248" endtime="20220728 11:39:59.251"/>
+</test>
+<status status="PASS" starttime="20220728 11:39:59.185" endtime="20220728 11:39:59.252"/>
+</suite>
+<suite id="s1-s3" name="Day6runTestusingTag2" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6runTestusingTag2.robot">
+<test id="s1-s3-t1" name="Test Case 1" line="7">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.073" endtime="20220728 11:39:59.074"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.072" endtime="20220728 11:39:59.075"/>
+</test>
+<test id="s1-s3-t2" name="Test Case 2" line="12">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.094" endtime="20220728 11:39:59.095"/>
+</kw>
+<tag>Grey</tag>
+<status status="PASS" starttime="20220728 11:39:59.075" endtime="20220728 11:39:59.095"/>
+</test>
+<test id="s1-s3-t3" name="Test Case 3" line="17">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.097" endtime="20220728 11:39:59.098"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.096" endtime="20220728 11:39:59.099"/>
+</test>
+<test id="s1-s3-t4" name="Test Case 4" line="22">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 4</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.101" endtime="20220728 11:39:59.102"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.100" endtime="20220728 11:39:59.103"/>
+</test>
+<test id="s1-s3-t5" name="Test Case 5" line="27">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 5</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.104" endtime="20220728 11:39:59.104"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.103" endtime="20220728 11:39:59.105"/>
+</test>
+<test id="s1-s3-t6" name="Test Case 6" line="32">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 6</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.106" endtime="20220728 11:39:59.107"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:59.105" endtime="20220728 11:39:59.107"/>
+</test>
+<test id="s1-s3-t7" name="Test Case 7" line="37">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 7</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.110" endtime="20220728 11:39:59.111"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.108" endtime="20220728 11:39:59.111"/>
+</test>
+<test id="s1-s3-t8" name="Test Case 8" line="42">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 8</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.114" endtime="20220728 11:39:59.115"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:59.113" endtime="20220728 11:39:59.115"/>
+</test>
+<test id="s1-s3-t9" name="Test Case 9" line="47">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 9</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.117" endtime="20220728 11:39:59.118"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:59.116" endtime="20220728 11:39:59.118"/>
+</test>
+<test id="s1-s3-t10" name="Test Case 10" line="52">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 10</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:59.121" endtime="20220728 11:39:59.122"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:59.119" endtime="20220728 11:39:59.122"/>
+</test>
+<status status="PASS" starttime="20220728 11:39:59.064" endtime="20220728 11:39:59.124"/>
+</suite>
+<suite id="s1-s4" name="Day6runTestusingTag3" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6runTestusingTag3.robot">
+<test id="s1-s4-t1" name="Test Case 1" line="7">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.690" endtime="20220728 11:40:00.691"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:40:00.688" endtime="20220728 11:40:00.691"/>
+</test>
+<test id="s1-s4-t2" name="Test Case 2" line="12">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.706" endtime="20220728 11:40:00.709"/>
+</kw>
+<tag>Grey</tag>
+<status status="PASS" starttime="20220728 11:40:00.692" endtime="20220728 11:40:00.709"/>
+</test>
+<test id="s1-s4-t3" name="Test Case 3" line="17">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.710" endtime="20220728 11:40:00.711"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:40:00.710" endtime="20220728 11:40:00.711"/>
+</test>
+<test id="s1-s4-t4" name="Test Case 4" line="22">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 4</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.713" endtime="20220728 11:40:00.714"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:40:00.712" endtime="20220728 11:40:00.714"/>
+</test>
+<test id="s1-s4-t5" name="Test Case 5" line="27">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 5</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.716" endtime="20220728 11:40:00.716"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:40:00.715" endtime="20220728 11:40:00.717"/>
+</test>
+<test id="s1-s4-t6" name="Test Case 6" line="32">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 6</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.718" endtime="20220728 11:40:00.719"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:40:00.717" endtime="20220728 11:40:00.720"/>
+</test>
+<test id="s1-s4-t7" name="Test Case 7" line="37">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 7</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.721" endtime="20220728 11:40:00.722"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:40:00.721" endtime="20220728 11:40:00.722"/>
+</test>
+<test id="s1-s4-t8" name="Test Case 8" line="42">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 8</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.723" endtime="20220728 11:40:00.723"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:40:00.722" endtime="20220728 11:40:00.723"/>
+</test>
+<test id="s1-s4-t9" name="Test Case 9" line="47">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 9</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.724" endtime="20220728 11:40:00.725"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:40:00.724" endtime="20220728 11:40:00.725"/>
+</test>
+<test id="s1-s4-t10" name="Test Case 10" line="52">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 10</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:00.726" endtime="20220728 11:40:00.726"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:40:00.725" endtime="20220728 11:40:00.726"/>
+</test>
+<status status="PASS" starttime="20220728 11:40:00.681" endtime="20220728 11:40:00.727"/>
+</suite>
+<suite id="s1-s5" name="Googletest" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\googletest.robot">
+<test id="s1-s5-t1" name="TC_001" line="12">
+<kw name="Open Browser">
+<arg>https://www.docker.com</arg>
+<arg>chrome</arg>
+<msg timestamp="20220728 11:40:00.749" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:00.749" endtime="20220728 11:40:00.749"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:00.751" endtime="20220728 11:40:00.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:00.752" endtime="20220728 11:40:00.752"/>
+</kw>
+<kw name="Open Browser">
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<status status="NOT RUN" starttime="20220728 11:40:00.754" endtime="20220728 11:40:00.754"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:00.756" endtime="20220728 11:40:00.757"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>//img[@class='lnXdpd']</arg>
+<status status="NOT RUN" starttime="20220728 11:40:00.759" endtime="20220728 11:40:00.759"/>
+</kw>
+<kw name="get title">
+<var>${currentpagetitle}</var>
+<status status="NOT RUN" starttime="20220728 11:40:00.762" endtime="20220728 11:40:00.762"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${currentpagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:00.763" endtime="20220728 11:40:00.763"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>//a[text()='Gmail']</arg>
+<status status="NOT RUN" starttime="20220728 11:40:00.765" endtime="20220728 11:40:00.766"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>//input[@class='gLFyf gsfi']</arg>
+<status status="NOT RUN" starttime="20220728 11:40:00.768" endtime="20220728 11:40:00.769"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:40:00.773" endtime="20220728 11:40:00.774"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:00.747" endtime="20220728 11:40:00.774">No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s5-t2" name="TC_002" line="34">
+<kw name="Open Browser">
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<msg timestamp="20220728 11:40:00.782" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:00.781" endtime="20220728 11:40:00.782"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:40:00.786" endtime="20220728 11:40:00.787"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:00.776" endtime="20220728 11:40:00.787">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:00.737" endtime="20220728 11:40:00.788"/>
+</suite>
+<suite id="s1-s6" name="RadioButton" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\RadioButton.robot">
+<test id="s1-s6-t1" name="TC_Radio_001" line="15">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:02.526" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.525" endtime="20220728 11:40:02.526"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:02.529" endtime="20220728 11:40:02.529"/>
+</kw>
+<kw name="Select Frame">
+<arg>locator</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.531" endtime="20220728 11:40:02.531"/>
+</kw>
+<kw name="Select Radio Button">
+<arg>group_name</arg>
+<arg>value</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.533" endtime="20220728 11:40:02.534"/>
+</kw>
+<kw name="Checkbox Should Be Selected">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.536" endtime="20220728 11:40:02.536"/>
+</kw>
+<kw name="Select Checkbox">
+<arg>(//input[@type='checkbox'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.538" endtime="20220728 11:40:02.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:02.540" endtime="20220728 11:40:02.540"/>
+</kw>
+<kw name="Checkbox Should Be Selected">
+<arg>(//input[@type='checkbox'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.543" endtime="20220728 11:40:02.544"/>
+</kw>
+<kw name="Unselect Checkbox">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.547" endtime="20220728 11:40:02.547"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:02.547" endtime="20220728 11:40:02.548"/>
+</kw>
+<kw name="Checkbox Should not Be Selected">
+<arg>(//input[@type='checkbox'])[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:02.550" endtime="20220728 11:40:02.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:02.551" endtime="20220728 11:40:02.551"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:40:02.555" endtime="20220728 11:40:02.555"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.522" endtime="20220728 11:40:02.556">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:02.512" endtime="20220728 11:40:02.558"/>
+</suite>
+<suite id="s1-s7" name="ReusableCheck" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\ReusableCheck.robot">
+<test id="s1-s7-t1" name="TC_001" line="15">
+<kw name="LaunchMyWebsite" library="test_reusable" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:02.506" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.505" endtime="20220728 11:40:02.506"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:02.510" endtime="20220728 11:40:02.510"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.503" endtime="20220728 11:40:02.511"/>
+</kw>
+<kw name="CloseMyWebsite" library="test_reusable" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:40:02.515" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.514" endtime="20220728 11:40:02.515"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.512" endtime="20220728 11:40:02.515">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.501" endtime="20220728 11:40:02.515">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<test id="s1-s7-t2" name="TC_002" line="29">
+<kw name="LaunchMyWebsite" library="test_reusable" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:02.521" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.521" endtime="20220728 11:40:02.521"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:02.523" endtime="20220728 11:40:02.523"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.517" endtime="20220728 11:40:02.525"/>
+</kw>
+<kw name="CloseMyWebsite" library="test_reusable" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:40:02.528" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.528" endtime="20220728 11:40:02.528"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.525" endtime="20220728 11:40:02.529">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.517" endtime="20220728 11:40:02.529">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<test id="s1-s7-t3" name="TC_003" line="56">
+<kw name="LaunchMyWebsite" library="test_reusable" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:02.533" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.533" endtime="20220728 11:40:02.533"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:02.536" endtime="20220728 11:40:02.536"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.530" endtime="20220728 11:40:02.537"/>
+</kw>
+<kw name="CloseMyWebsite" library="test_reusable" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:40:02.542" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:02.542" endtime="20220728 11:40:02.543"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.538" endtime="20220728 11:40:02.543">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:02.530" endtime="20220728 11:40:02.544">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:02.481" endtime="20220728 11:40:02.545"/>
+</suite>
+<suite id="s1-s8" name="SelectDoprDown" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\SelectDoprDown.robot">
+<test id="s1-s8-t1" name="TC_001" line="10">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:04.254" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:04.253" endtime="20220728 11:40:04.254"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:04.262" endtime="20220728 11:40:04.262"/>
+</kw>
+<kw name="Click Element">
+<arg>(//a[text()='Contact'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.267" endtime="20220728 11:40:04.267"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>Contact</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.272" endtime="20220728 11:40:04.272"/>
+</kw>
+<kw name="Get WebElements">
+<var>${dropdowncount}</var>
+<arg>//select[@name='menu-363']//option</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.277" endtime="20220728 11:40:04.277"/>
+</kw>
+<for flavor="IN">
+<var>${apple}</var>
+<value>@{dropdowncount}</value>
+<iter>
+<var name="${apple}"/>
+<kw name="Get Element Attribute">
+<var>${headername}</var>
+<arg>//select[@name='menu-363']//option</arg>
+<arg>value</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.284" endtime="20220728 11:40:04.285"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headername}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:04.285" endtime="20220728 11:40:04.286"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 11:40:04.278" endtime="20220728 11:40:04.286"/>
+</iter>
+<status status="NOT RUN" starttime="20220728 11:40:04.278" endtime="20220728 11:40:04.286"/>
+</for>
+<status status="FAIL" starttime="20220728 11:40:04.245" endtime="20220728 11:40:04.287">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:04.201" endtime="20220728 11:40:04.289"/>
+</suite>
+<suite id="s1-s9" name="WindowAndTab" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\WindowAndTab.robot">
+<test id="s1-s9-t1" name="TC_001" line="18">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:04.221" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:04.220" endtime="20220728 11:40:04.221"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:04.229" endtime="20220728 11:40:04.229"/>
+</kw>
+<kw name="Get Title">
+<var>${pagetitle}</var>
+<status status="NOT RUN" starttime="20220728 11:40:04.232" endtime="20220728 11:40:04.233"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:04.233" endtime="20220728 11:40:04.234"/>
+</kw>
+<kw name="Execute Javascript">
+<arg>window.open()</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.238" endtime="20220728 11:40:04.238"/>
+</kw>
+<kw name="Switch Window">
+<arg>locator=NEW</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.243" endtime="20220728 11:40:04.243"/>
+</kw>
+<kw name="Go To">
+<arg>https://www.twitter.com</arg>
+<status status="NOT RUN" starttime="20220728 11:40:04.246" endtime="20220728 11:40:04.246"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:04.247" endtime="20220728 11:40:04.248"/>
+</kw>
+<kw name="Get Title">
+<var>${pagetitle}</var>
+<status status="NOT RUN" starttime="20220728 11:40:04.251" endtime="20220728 11:40:04.252"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:04.253" endtime="20220728 11:40:04.253"/>
+</kw>
+<kw name="Close Window">
+<status status="NOT RUN" starttime="20220728 11:40:04.258" endtime="20220728 11:40:04.259"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:04.259" endtime="20220728 11:40:04.260"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:40:04.264" endtime="20220728 11:40:04.264"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:04.213" endtime="20220728 11:40:04.264">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:04.194" endtime="20220728 11:40:04.265"/>
+</suite>
+<suite id="s1-s10" name="readDateNTime" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\readDateNTime.robot">
+<test id="s1-s10-t1" name="Date_Movement" line="11">
+<kw name="Get Current Date" library="DateTime">
+<var>${today_date}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220728 11:40:05.740" level="INFO">${today_date} = 2022-07-28 11:40:05.740</msg>
+<status status="PASS" starttime="20220728 11:40:05.739" endtime="20220728 11:40:05.740"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${today_date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:05.741" endtime="20220728 11:40:05.741"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${only_date}</var>
+<arg>${today_date}</arg>
+<arg>result_format=%a %B %d</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20220728 11:40:05.747" level="INFO">${only_date} = Thu July 28</msg>
+<status status="PASS" starttime="20220728 11:40:05.742" endtime="20220728 11:40:05.747"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${only_date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:05.747" endtime="20220728 11:40:05.748"/>
+</kw>
+<kw name="Add Time To Date" library="DateTime">
+<var>${date_+_28}</var>
+<arg>${today_date}</arg>
+<arg>28 days</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<msg timestamp="20220728 11:40:05.749" level="INFO">${date_+_28} = 2022-08-25 11:40:05.740</msg>
+<status status="PASS" starttime="20220728 11:40:05.748" endtime="20220728 11:40:05.749"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>28 days from todays date is: ${date_+_28}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:05.749" endtime="20220728 11:40:05.750"/>
+</kw>
+<kw name="Add Time To Date" library="DateTime">
+<var>${date_minus_28}</var>
+<arg>${today_date}</arg>
+<arg>-28 days</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<msg timestamp="20220728 11:40:05.752" level="INFO">${date_minus_28} = 2022-06-30 11:40:05.740</msg>
+<status status="PASS" starttime="20220728 11:40:05.751" endtime="20220728 11:40:05.752"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>28 days back from todays date is: ${date_minus_28}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:40:05.752" endtime="20220728 11:40:05.770"/>
+</kw>
+<status status="PASS" starttime="20220728 11:40:05.737" endtime="20220728 11:40:05.771"/>
+</test>
+<status status="PASS" starttime="20220728 11:40:05.726" endtime="20220728 11:40:05.771"/>
+</suite>
+<suite id="s1-s11" name="techEd" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\techEd.robot">
+<test id="s1-s11-t1" name="TC_001" line="12">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:40:05.754" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:40:05.754" endtime="20220728 11:40:05.754"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:40:05.757" endtime="20220728 11:40:05.757"/>
+</kw>
+<kw name="Click Element">
+<arg>(//a[text()='Contact'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.759" endtime="20220728 11:40:05.760"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>Contact</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.762" endtime="20220728 11:40:05.762"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>info@techedtrainings.com</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.764" endtime="20220728 11:40:05.764"/>
+</kw>
+<kw name="Input Text">
+<arg>text-name</arg>
+<arg>Prashanthi K</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.766" endtime="20220728 11:40:05.766"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.767" endtime="20220728 11:40:05.767"/>
+</kw>
+<kw name="Get Location">
+<var>${currURL}</var>
+<status status="NOT RUN" starttime="20220728 11:40:05.769" endtime="20220728 11:40:05.770"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${textToPrint}</var>
+<arg>${prefix}</arg>
+<arg>${currURL}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.770" endtime="20220728 11:40:05.770"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${textToPrint}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.770" endtime="20220728 11:40:05.771"/>
+</kw>
+<kw name="Select From List By Value">
+<arg>menu-363</arg>
+<arg>Data Science</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.772" endtime="20220728 11:40:05.773"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.773" endtime="20220728 11:40:05.773"/>
+</kw>
+<kw name="Select From List By Index">
+<arg>menu-363</arg>
+<arg>2</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.775" endtime="20220728 11:40:05.776"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.776" endtime="20220728 11:40:05.776"/>
+</kw>
+<kw name="Select From List By Value">
+<arg>menu-363</arg>
+<arg>Programming</arg>
+<status status="NOT RUN" starttime="20220728 11:40:05.779" endtime="20220728 11:40:05.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:40:05.780" endtime="20220728 11:40:05.781"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:40:05.784" endtime="20220728 11:40:05.784"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:40:05.749" endtime="20220728 11:40:05.785">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:40:05.736" endtime="20220728 11:40:05.787"/>
+</suite>
+<suite id="s1-s12" name="Day4Workshop" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day4Workshop.robot">
+<test id="s1-s12-t1" name="TC_001" line="12">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:50.818" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:50.818" endtime="20220728 11:39:50.819"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:50.824" endtime="20220728 11:39:50.825"/>
+</kw>
+<kw name="Page Should Contain Element">
+<arg>//img[@alt='Google']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.827" endtime="20220728 11:39:50.827"/>
+</kw>
+<kw name="validateGooglePageTitle">
+<status status="NOT RUN" starttime="20220728 11:39:50.827" endtime="20220728 11:39:50.827"/>
+</kw>
+<kw name="validateGmailLink">
+<status status="NOT RUN" starttime="20220728 11:39:50.828" endtime="20220728 11:39:50.828"/>
+</kw>
+<kw name="validateGoogleSearhTextBox">
+<status status="NOT RUN" starttime="20220728 11:39:50.828" endtime="20220728 11:39:50.828"/>
+</kw>
+<kw name="validateGoogleSearchButton">
+<status status="NOT RUN" starttime="20220728 11:39:50.829" endtime="20220728 11:39:50.829"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:50.831" endtime="20220728 11:39:50.831"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:50.815" endtime="20220728 11:39:50.832">No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s12-t2" name="TC_002" line="30">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:50.836" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:50.836" endtime="20220728 11:39:50.836"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:50.840" endtime="20220728 11:39:50.841"/>
+</kw>
+<kw name="Page Should Contain Element">
+<arg>(//a[text()='Sign in'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:50.843" endtime="20220728 11:39:50.843"/>
+</kw>
+<kw name="validateGooglePageTitle">
+<status status="NOT RUN" starttime="20220728 11:39:50.844" endtime="20220728 11:39:50.844"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:50.846" endtime="20220728 11:39:50.846"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:50.833" endtime="20220728 11:39:50.847">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:50.803" endtime="20220728 11:39:50.848"/>
+</suite>
+<suite id="s1-s13" name="Day4Workshop2" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day4Workshop2.robot">
+<test id="s1-s13-t1" name="Test Case 1" line="7">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:52.574" endtime="20220728 11:39:52.575"/>
+</kw>
+<tag>Prashanthi</tag>
+<status status="PASS" starttime="20220728 11:39:52.573" endtime="20220728 11:39:52.575"/>
+</test>
+<status status="PASS" starttime="20220728 11:39:52.567" endtime="20220728 11:39:52.576"/>
+</suite>
+<suite id="s1-s14" name="Day5ValidateHTML" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day5ValidateHTML.robot">
+<test id="s1-s14-t1" name="TC_001" line="13">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:52.621" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:52.620" endtime="20220728 11:39:52.621"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:52.625" endtime="20220728 11:39:52.625"/>
+</kw>
+<kw name="Get Element Count" library="XML">
+<var>${Trow}</var>
+<arg>//table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns and logs how many elements the given ``xpath`` matches.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.626" endtime="20220728 11:39:52.626"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Table row count is: ${Trow}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.626" endtime="20220728 11:39:52.626"/>
+</kw>
+<kw name="Get Element Count" library="XML">
+<var>${Tcol}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns and logs how many elements the given ``xpath`` matches.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.626" endtime="20220728 11:39:52.627"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Table column count is: ${Tcol}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.627" endtime="20220728 11:39:52.627"/>
+</kw>
+<kw name="Get Text">
+<var>${headerName1}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.629" endtime="20220728 11:39:52.630"/>
+</kw>
+<kw name="Get Text">
+<var>${headerName2}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th[2]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.632" endtime="20220728 11:39:52.632"/>
+</kw>
+<kw name="Get Text">
+<var>${headerName3}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th[3]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.634" endtime="20220728 11:39:52.634"/>
+</kw>
+<kw name="Get Text">
+<var>${headerName4}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th[4]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.636" endtime="20220728 11:39:52.637"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.637" endtime="20220728 11:39:52.637"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.637" endtime="20220728 11:39:52.637"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.638" endtime="20220728 11:39:52.638"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName4}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.638" endtime="20220728 11:39:52.638"/>
+</kw>
+<kw name="Get WebElements">
+<var>${columnCount}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.641" endtime="20220728 11:39:52.641"/>
+</kw>
+<for flavor="IN">
+<var>${count}</var>
+<value>${columnCount}</value>
+<iter>
+<var name="${count}"/>
+<kw name="Get Text">
+<var>${headerName}</var>
+<arg>${count}</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.644" endtime="20220728 11:39:52.645"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.645" endtime="20220728 11:39:52.645"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 11:39:52.642" endtime="20220728 11:39:52.645"/>
+</iter>
+<status status="NOT RUN" starttime="20220728 11:39:52.642" endtime="20220728 11:39:52.646"/>
+</for>
+<kw name="Get WebElements">
+<var>${columnCount}</var>
+<arg>//a</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.649" endtime="20220728 11:39:52.650"/>
+</kw>
+<for flavor="IN">
+<var>${count}</var>
+<value>${columnCount}</value>
+<iter>
+<var name="${count}"/>
+<kw name="Get Text">
+<var>${headerName}</var>
+<arg>${count}</arg>
+<status status="NOT RUN" starttime="20220728 11:39:52.654" endtime="20220728 11:39:52.654"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${headerName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:52.654" endtime="20220728 11:39:52.655"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 11:39:52.650" endtime="20220728 11:39:52.655"/>
+</iter>
+<status status="NOT RUN" starttime="20220728 11:39:52.650" endtime="20220728 11:39:52.655"/>
+</for>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:52.660" endtime="20220728 11:39:52.660"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:52.615" endtime="20220728 11:39:52.661">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:52.574" endtime="20220728 11:39:52.662"/>
+</suite>
+<suite id="s1-s15" name="Day5Workshop1" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day5Workshop1.robot">
+<test id="s1-s15-t1" name="TC_001" line="12">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:53.999" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:53.999" endtime="20220728 11:39:53.999"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:54.005" endtime="20220728 11:39:54.006"/>
+</kw>
+<kw name="Scroll Element Into View">
+<arg>(//span[@class='et_pb_image_wrap '])[40]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.011" endtime="20220728 11:39:54.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.011" endtime="20220728 11:39:54.012"/>
+</kw>
+<kw name="Scroll Element Into View">
+<arg>(//span[@class='et_pb_image_wrap '])[8]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.013" endtime="20220728 11:39:54.014"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.014" endtime="20220728 11:39:54.014"/>
+</kw>
+<kw name="Mouse Over">
+<arg>(//a[text()='Products'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.016" endtime="20220728 11:39:54.016"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.016" endtime="20220728 11:39:54.017"/>
+</kw>
+<kw name="Mouse Over">
+<arg>(//a[text()='Developers'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.019" endtime="20220728 11:39:54.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.019" endtime="20220728 11:39:54.020"/>
+</kw>
+<kw name="Mouse Over">
+<arg>(//a[text()='About Us'])[1]</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.022" endtime="20220728 11:39:54.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.023" endtime="20220728 11:39:54.023"/>
+</kw>
+<kw name="Get Location">
+<var>${currURL}</var>
+<status status="NOT RUN" starttime="20220728 11:39:54.026" endtime="20220728 11:39:54.026"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${textToPrint}</var>
+<arg>${prefix}</arg>
+<arg>${currURL}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.027" endtime="20220728 11:39:54.027"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${textToPrint}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.027" endtime="20220728 11:39:54.027"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:54.030" endtime="20220728 11:39:54.030"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:53.996" endtime="20220728 11:39:54.031">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:53.983" endtime="20220728 11:39:54.050"/>
+</suite>
+<suite id="s1-s16" name="Day6MultiSelectChkbox" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6MultiSelectChkbox.robot">
+<test id="s1-s16-t1" name="TC_001" line="11">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:54.295" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:54.295" endtime="20220728 11:39:54.296"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:54.303" endtime="20220728 11:39:54.304"/>
+</kw>
+<kw name="Select Frame">
+<arg>result</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.308" endtime="20220728 11:39:54.308"/>
+</kw>
+<kw name="Click Element">
+<arg>//label[@class='dropdown-label']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.313" endtime="20220728 11:39:54.313"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected">
+<arg>//input[@value='Selection 3']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.319" endtime="20220728 11:39:54.319"/>
+</kw>
+<kw name="Select Checkbox">
+<arg>//input[@value='Selection 3']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.328" endtime="20220728 11:39:54.329"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220726 09:25:59.950" endtime="20220726 09:25:59.950"/>
+<status status="NOT RUN" starttime="20220728 11:39:54.330" endtime="20220728 11:39:54.331"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
+<kw name="Checkbox Should Not Be Selected">
+<arg>//input[@value='Selection 5']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.341" endtime="20220728 11:39:54.342"/>
+</kw>
+<kw name="Select Checkbox">
+<arg>//input[@value='Selection 5']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:54.349" endtime="20220728 11:39:54.349"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:54.351" endtime="20220728 11:39:54.351"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:54.356" endtime="20220728 11:39:54.357"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:54.285" endtime="20220728 11:39:54.358">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:54.244" endtime="20220728 11:39:54.361"/>
+</suite>
+<suite id="s1-s17" name="Day6PopupHandle" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6PopupHandle.robot">
+<test id="s1-s17-t1" name="TC_001" line="15">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:55.717" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.717" endtime="20220728 11:39:55.717"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.723" endtime="20220728 11:39:55.723"/>
+</kw>
+<kw name="Click Button">
+<arg>//button[text()='Click for JS Alert']</arg>
+<status status="NOT RUN" starttime="20220728 11:39:55.725" endtime="20220728 11:39:55.726"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:55.726" endtime="20220728 11:39:55.726"/>
+</kw>
+<kw name="Handle Alert">
 <var>${pop_up_text}</var>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="NOT RUN" starttime="20220726 09:25:59.951" endtime="20220726 09:25:59.951"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.729" endtime="20220728 11:39:55.729"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${pop_up_text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220726 09:25:59.951" endtime="20220726 09:25:59.951"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.729" endtime="20220728 11:39:55.729"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
+<kw name="Element Text Should Be">
 <arg>//p[@id='result']</arg>
 <arg>You successfully clicked an alert</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" starttime="20220726 09:25:59.951" endtime="20220726 09:25:59.951"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.732" endtime="20220728 11:39:55.732"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220726 09:25:59.952" endtime="20220726 09:25:59.952"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.732" endtime="20220728 11:39:55.733"/>
 </kw>
-<kw name="CloseMyWebsite" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220726 09:25:59.954" endtime="20220726 09:26:02.235"/>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:55.735" endtime="20220728 11:39:55.736"/>
 </kw>
-<status status="PASS" starttime="20220726 09:25:59.952" endtime="20220726 09:26:02.236"/>
-</kw>
-<status status="FAIL" starttime="20220726 09:25:53.738" endtime="20220726 09:26:02.236">Button with locator 'JavaScriptAlertbtn' not found.</status>
+<status status="FAIL" starttime="20220728 11:39:55.713" endtime="20220728 11:39:55.737">No keyword with name 'Open Browser' found.</status>
 </test>
-<test id="s1-t2" name="TC_002" line="30">
-<kw name="LaunchMyWebsite" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<test id="s1-s17-t2" name="TC_002" line="34">
+<kw name="Open Browser">
 <arg>${appurl}</arg>
 <arg>${browsername}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220726 09:26:02.240" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
-<status status="PASS" starttime="20220726 09:26:02.240" endtime="20220726 09:26:07.174"/>
+<msg timestamp="20220728 11:39:55.760" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.760" endtime="20220728 11:39:55.760"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220726 09:26:07.174" endtime="20220726 09:26:07.299"/>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.763" endtime="20220728 11:39:55.763"/>
 </kw>
-<status status="PASS" starttime="20220726 09:26:02.239" endtime="20220726 09:26:07.300"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
+<kw name="Click Button">
 <arg>//button[text()='Click for JS Confirm']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220726 09:26:07.301" level="INFO">Clicking button '//button[text()='Click for JS Confirm']'.</msg>
-<status status="PASS" starttime="20220726 09:26:07.300" endtime="20220726 09:26:07.377"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.765" endtime="20220728 11:39:55.765"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:08.383" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220726 09:26:07.378" endtime="20220726 09:26:08.383"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.765" endtime="20220728 11:39:55.766"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
+<kw name="Handle Alert">
 <var>${pop_up_text}</var>
 <arg>action=DISMISS</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20220726 09:26:08.384" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg timestamp="20220726 09:26:08.390" level="INFO">${pop_up_text} = I am a JS Confirm</msg>
-<status status="PASS" starttime="20220726 09:26:08.384" endtime="20220726 09:26:08.391"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.767" endtime="20220728 11:39:55.768"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${pop_up_text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220726 09:26:08.391" endtime="20220726 09:26:08.392"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.768" endtime="20220728 11:39:55.769"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
+<kw name="Element Text Should Be">
 <arg>//p[@id='result']</arg>
 <arg>You clicked: Cancel</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220726 09:26:08.393" level="INFO">Verifying element '//p[@id='result']' contains exact text 'You clicked: Cancel'.</msg>
-<status status="PASS" starttime="20220726 09:26:08.393" endtime="20220726 09:26:08.425"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.771" endtime="20220728 11:39:55.771"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:09.427" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220726 09:26:08.425" endtime="20220726 09:26:09.427"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.772" endtime="20220728 11:39:55.772"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
+<kw name="Click Button">
 <arg>//button[text()='Click for JS Confirm']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220726 09:26:09.428" level="INFO">Clicking button '//button[text()='Click for JS Confirm']'.</msg>
-<status status="PASS" starttime="20220726 09:26:09.428" endtime="20220726 09:26:09.472"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.774" endtime="20220728 11:39:55.774"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:10.477" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220726 09:26:09.473" endtime="20220726 09:26:10.477"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.774" endtime="20220728 11:39:55.774"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
+<kw name="Handle Alert">
 <var>${pop_up_text}</var>
 <arg>action=ACCEPT</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20220726 09:26:10.478" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg timestamp="20220726 09:26:10.484" level="INFO">${pop_up_text} = I am a JS Confirm</msg>
-<status status="PASS" starttime="20220726 09:26:10.478" endtime="20220726 09:26:10.484"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.776" endtime="20220728 11:39:55.776"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${pop_up_text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220726 09:26:10.485" endtime="20220726 09:26:10.486"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.777" endtime="20220728 11:39:55.777"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
+<kw name="Element Text Should Be">
 <arg>//p[@id='result']</arg>
 <arg>You clicked: Ok</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220726 09:26:10.488" level="INFO">Verifying element '//p[@id='result']' contains exact text 'You clicked: Ok'.</msg>
-<status status="PASS" starttime="20220726 09:26:10.487" endtime="20220726 09:26:10.506"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.779" endtime="20220728 11:39:55.779"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:11.521" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220726 09:26:10.506" endtime="20220726 09:26:11.521"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.779" endtime="20220728 11:39:55.780"/>
 </kw>
-<kw name="CloseMyWebsite" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220726 09:26:11.522" endtime="20220726 09:26:13.761"/>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:55.782" endtime="20220728 11:39:55.782"/>
 </kw>
-<status status="PASS" starttime="20220726 09:26:11.522" endtime="20220726 09:26:13.762"/>
-</kw>
-<status status="PASS" starttime="20220726 09:26:02.239" endtime="20220726 09:26:13.764"/>
+<status status="FAIL" starttime="20220728 11:39:55.757" endtime="20220728 11:39:55.782">No keyword with name 'Open Browser' found.</status>
 </test>
-<test id="s1-t3" name="TC_003" line="57">
-<kw name="LaunchMyWebsite" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<test id="s1-s17-t3" name="TC_003" line="66">
+<kw name="Open Browser">
 <arg>${appurl}</arg>
 <arg>${browsername}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220726 09:26:13.771" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
-<status status="PASS" starttime="20220726 09:26:13.770" endtime="20220726 09:26:18.584"/>
+<msg timestamp="20220728 11:39:55.787" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.786" endtime="20220728 11:39:55.787"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220726 09:26:18.584" endtime="20220726 09:26:18.711"/>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.790" endtime="20220728 11:39:55.790"/>
 </kw>
-<status status="PASS" starttime="20220726 09:26:13.769" endtime="20220726 09:26:18.711"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
+<kw name="Click Button">
 <arg>//button[text()='Click for JS Prompt']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220726 09:26:18.712" level="INFO">Clicking button '//button[text()='Click for JS Prompt']'.</msg>
-<status status="PASS" starttime="20220726 09:26:18.712" endtime="20220726 09:26:18.783"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.792" endtime="20220728 11:39:55.792"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:19.794" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220726 09:26:18.784" endtime="20220726 09:26:19.794"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.792" endtime="20220728 11:39:55.792"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
+<kw name="Handle Alert">
 <var>${pop_up_text}</var>
 <arg>action=DISMISS</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20220726 09:26:19.795" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg timestamp="20220726 09:26:19.800" level="INFO">${pop_up_text} = I am a JS prompt</msg>
-<status status="PASS" starttime="20220726 09:26:19.794" endtime="20220726 09:26:19.800"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.794" endtime="20220728 11:39:55.794"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${pop_up_text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220726 09:26:19.801" endtime="20220726 09:26:19.801"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.795" endtime="20220728 11:39:55.795"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
+<kw name="Element Text Should Be">
 <arg>//p[@id='result']</arg>
 <arg>You entered: null</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220726 09:26:19.803" level="INFO">Verifying element '//p[@id='result']' contains exact text 'You entered: null'.</msg>
-<status status="PASS" starttime="20220726 09:26:19.802" endtime="20220726 09:26:19.830"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.797" endtime="20220728 11:39:55.797"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
+<kw name="Click Button">
 <arg>//button[text()='Click for JS Prompt']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220726 09:26:19.832" level="INFO">Clicking button '//button[text()='Click for JS Prompt']'.</msg>
-<status status="PASS" starttime="20220726 09:26:19.831" endtime="20220726 09:26:19.883"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.799" endtime="20220728 11:39:55.799"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220726 09:26:21.885" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220726 09:26:19.884" endtime="20220726 09:26:21.885"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.800" endtime="20220728 11:39:55.800"/>
 </kw>
-<kw name="Input Text Into Alert" library="SeleniumLibrary">
+<kw name="Input Text Into Alert">
 <arg>Prashanthi</arg>
 <arg>action=ACCEPT</arg>
-<doc>Types the given ``text`` into an input field in an alert.</doc>
-<status status="PASS" starttime="20220726 09:26:21.885" endtime="20220726 09:26:21.891"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.803" endtime="20220728 11:39:55.803"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
+<kw name="Element Text Should Be">
 <arg>//p[@id='result']</arg>
 <arg>You entered: Prashanthi</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220726 09:26:21.894" level="INFO">Verifying element '//p[@id='result']' contains exact text 'You entered: Prashanthi'.</msg>
-<status status="PASS" starttime="20220726 09:26:21.892" endtime="20220726 09:26:21.911"/>
+<status status="NOT RUN" starttime="20220728 11:39:55.805" endtime="20220728 11:39:55.806"/>
+</kw>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20220728 11:39:55.809" endtime="20220728 11:39:55.809"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.783" endtime="20220728 11:39:55.810">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:55.703" endtime="20220728 11:39:55.811"/>
+</suite>
+<suite id="s1-s18" name="Day6PopupHandle2" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6PopupHandle2.robot">
+<test id="s1-s18-t1" name="TC_001" line="16">
+<kw name="LaunchMyWebsite" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:55.896" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.895" endtime="20220728 11:39:55.896"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.899" endtime="20220728 11:39:55.900"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.893" endtime="20220728 11:39:55.901"/>
 </kw>
 <kw name="CloseMyWebsite" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220726 09:26:21.912" endtime="20220726 09:26:24.118"/>
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:39:55.905" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.904" endtime="20220728 11:39:55.905"/>
 </kw>
-<status status="PASS" starttime="20220726 09:26:21.912" endtime="20220726 09:26:24.119"/>
+<status status="FAIL" starttime="20220728 11:39:55.901" endtime="20220728 11:39:55.905">No keyword with name 'Close All Browsers' found.</status>
 </kw>
-<status status="PASS" starttime="20220726 09:26:13.768" endtime="20220726 09:26:24.119"/>
+<status status="FAIL" starttime="20220728 11:39:55.892" endtime="20220728 11:39:55.906">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
 </test>
-<status status="FAIL" starttime="20220726 09:25:53.294" endtime="20220726 09:26:24.121"/>
+<test id="s1-s18-t2" name="TC_002" line="30">
+<kw name="LaunchMyWebsite" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:55.911" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.911" endtime="20220728 11:39:55.911"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.913" endtime="20220728 11:39:55.914"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.908" endtime="20220728 11:39:55.914"/>
+</kw>
+<kw name="CloseMyWebsite" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:39:55.917" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.917" endtime="20220728 11:39:55.917"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.915" endtime="20220728 11:39:55.918">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.907" endtime="20220728 11:39:55.918">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<test id="s1-s18-t3" name="TC_003" line="57">
+<kw name="LaunchMyWebsite" type="SETUP">
+<kw name="Open Browser">
+<arg>${appurl}</arg>
+<arg>${browsername}</arg>
+<msg timestamp="20220728 11:39:55.923" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.922" endtime="20220728 11:39:55.923"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220728 11:39:55.925" endtime="20220728 11:39:55.925"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.920" endtime="20220728 11:39:55.926"/>
+</kw>
+<kw name="CloseMyWebsite" type="TEARDOWN">
+<kw name="Close All Browsers">
+<msg timestamp="20220728 11:39:55.930" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" starttime="20220728 11:39:55.929" endtime="20220728 11:39:55.930"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.927" endtime="20220728 11:39:55.930">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:55.919" endtime="20220728 11:39:55.930">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:55.846" endtime="20220728 11:39:55.931"/>
+</suite>
+<suite id="s1-s19" name="Day6ReadXML" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6ReadXML.robot">
+<kw name="readXML" type="SETUP">
+<kw name="Read XML" library="reusable">
+<var>${applicationpath}</var>
+<arg>applicationURL</arg>
+<msg timestamp="20220728 11:39:57.403" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\00003073\\PycharmProjects\\RobotProject/readData.xml'</msg>
+<status status="FAIL" starttime="20220728 11:39:57.396" endtime="20220728 11:39:57.407"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${applicationpath}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220728 11:39:57.408" endtime="20220728 11:39:57.409"/>
+</kw>
+<kw name="Read XML" library="reusable">
+<var>${chromepath}</var>
+<arg>chromepath</arg>
+<status status="NOT RUN" starttime="20220728 11:39:57.409" endtime="20220728 11:39:57.410"/>
+</kw>
+<status status="FAIL" starttime="20220728 11:39:57.395" endtime="20220728 11:39:57.410"/>
+</kw>
+<test id="s1-s19-t1" name="TC_001" line="16">
+<status status="FAIL" starttime="20220728 11:39:57.411" endtime="20220728 11:39:57.413">Parent suite setup failed:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\00003073\\PycharmProjects\\RobotProject/readData.xml'</status>
+</test>
+<status status="FAIL" starttime="20220728 11:39:57.362" endtime="20220728 11:39:57.414">Suite setup failed:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\00003073\\PycharmProjects\\RobotProject/readData.xml'</status>
+</suite>
+<suite id="s1-s20" name="Day6runTestusingTag" source="C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6runTestusingTag.robot">
+<test id="s1-s20-t1" name="Test Case 1" line="7">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.491" endtime="20220728 11:39:57.492"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:57.490" endtime="20220728 11:39:57.492"/>
+</test>
+<test id="s1-s20-t2" name="Test Case 2" line="12">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.494" endtime="20220728 11:39:57.494"/>
+</kw>
+<tag>Grey</tag>
+<status status="PASS" starttime="20220728 11:39:57.493" endtime="20220728 11:39:57.495"/>
+</test>
+<test id="s1-s20-t3" name="Test Case 3" line="17">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.496" endtime="20220728 11:39:57.497"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:57.495" endtime="20220728 11:39:57.497"/>
+</test>
+<test id="s1-s20-t4" name="Test Case 4" line="22">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 4</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.498" endtime="20220728 11:39:57.499"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:57.498" endtime="20220728 11:39:57.499"/>
+</test>
+<test id="s1-s20-t5" name="Test Case 5" line="27">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 5</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.501" endtime="20220728 11:39:57.502"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:57.500" endtime="20220728 11:39:57.502"/>
+</test>
+<test id="s1-s20-t6" name="Test Case 6" line="32">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 6</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.504" endtime="20220728 11:39:57.504"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:57.503" endtime="20220728 11:39:57.504"/>
+</test>
+<test id="s1-s20-t7" name="Test Case 7" line="37">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 7</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.506" endtime="20220728 11:39:57.506"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:57.505" endtime="20220728 11:39:57.507"/>
+</test>
+<test id="s1-s20-t8" name="Test Case 8" line="42">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 8</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.508" endtime="20220728 11:39:57.508"/>
+</kw>
+<tag>Black</tag>
+<status status="PASS" starttime="20220728 11:39:57.507" endtime="20220728 11:39:57.509"/>
+</test>
+<test id="s1-s20-t9" name="Test Case 9" line="47">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 9</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.510" endtime="20220728 11:39:57.510"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220728 11:39:57.509" endtime="20220728 11:39:57.511"/>
+</test>
+<test id="s1-s20-t10" name="Test Case 10" line="52">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 10</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 11:39:57.512" endtime="20220728 11:39:57.512"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220728 11:39:57.511" endtime="20220728 11:39:57.513"/>
+</test>
+<status status="PASS" starttime="20220728 11:39:57.481" endtime="20220728 11:39:57.514"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 20 executions.</doc>
+<status status="FAIL" starttime="20220728 11:39:50.715" endtime="20220728 11:40:05.788"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="42" fail="22" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="8" fail="0" skip="0">Black</stat>
+<stat pass="4" fail="0" skip="0">Grey</stat>
+<stat pass="1" fail="0" skip="0">Prashanthi</stat>
+<stat pass="16" fail="0" skip="0">Regression</stat>
+<stat pass="12" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="Day6PopupHandle2">Day6PopupHandle2</stat>
+<stat pass="42" fail="22" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Checkbox">Suites.Checkbox</stat>
+<stat pass="10" fail="0" skip="0" id="s1-s2" name="Day6runTestusingTag1">Suites.Day6runTestusingTag1</stat>
+<stat pass="10" fail="0" skip="0" id="s1-s3" name="Day6runTestusingTag2">Suites.Day6runTestusingTag2</stat>
+<stat pass="10" fail="0" skip="0" id="s1-s4" name="Day6runTestusingTag3">Suites.Day6runTestusingTag3</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s5" name="Googletest">Suites.Googletest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s6" name="RadioButton">Suites.RadioButton</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s7" name="ReusableCheck">Suites.ReusableCheck</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s8" name="SelectDoprDown">Suites.SelectDoprDown</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s9" name="WindowAndTab">Suites.WindowAndTab</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s10" name="readDateNTime">Suites.readDateNTime</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s11" name="techEd">Suites.techEd</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s12" name="Day4Workshop">Suites.Day4Workshop</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s13" name="Day4Workshop2">Suites.Day4Workshop2</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s14" name="Day5ValidateHTML">Suites.Day5ValidateHTML</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s15" name="Day5Workshop1">Suites.Day5Workshop1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s16" name="Day6MultiSelectChkbox">Suites.Day6MultiSelectChkbox</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s17" name="Day6PopupHandle">Suites.Day6PopupHandle</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s18" name="Day6PopupHandle2">Suites.Day6PopupHandle2</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s19" name="Day6ReadXML">Suites.Day6ReadXML</stat>
+<stat pass="10" fail="0" skip="0" id="s1-s20" name="Day6runTestusingTag">Suites.Day6runTestusingTag</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220728 11:39:50.784" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Checkbox.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:00.745" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\googletest.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:02.521" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\RadioButton.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:02.489" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\ReusableCheck.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:02.498" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\reusable\test_reusable.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:04.217" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\SelectDoprDown.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:04.209" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\WindowAndTab.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:40:05.747" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\techEd.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:50.813" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day4Workshop.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:52.602" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day5ValidateHTML.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:53.994" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day5Workshop1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:54.261" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6MultiSelectChkbox.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:55.712" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6PopupHandle.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:55.857" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6PopupHandle2.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:55.887" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\reusable\test_reusable.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
+<msg timestamp="20220728 11:39:57.372" level="ERROR">Error in file 'C:\Users\00003073\PycharmProjects\RobotProject\testscripts\Day6ReadXML.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\Scripts\robot.exe
+  C:\Python\python310.zip
+  C:\Python\DLLs
+  C:\Python\lib
+  C:\Python
+  C:\Users\00003073\PycharmProjects\RobotProject\venv
+  C:\Users\00003073\PycharmProjects\RobotProject\venv\lib\site-packages</msg>
 </errors>
 </robot>

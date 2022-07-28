@@ -7,8 +7,8 @@ ${appurl}       https://techedtrainings.com
 ${browsername}    chrome
 ${prefix}    The current URL is:
 
-
 *** Test Cases ***
+
 TC_001
 
     Open Browser    ${appurl}    ${browsername}
